@@ -27,11 +27,11 @@ typedef struct {
 	int endIM;
 	int endJM;
 	int** pointerM;
-} parametro; // declarando os parâmetros
+} parametro; // declarando o tipo parâmetro
 
-int primosTotal = 0;
+int primosTotal = 0; // variável global que armazena o numero total de numeros primos
 CRITICAL_SECTION hSecaoCritica; // VARIÁVEL DE SEÇÃO CRÍTICA
-vector<parametro> vecPar;
+vector<parametro> vecPar; // declaração do vetor global de parametros
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////// FIM DAS DECLARAÇÕES GLOBAIS/PROTOTIPAÇÕES E COMEÇO DA MAIN////////////////////////////////////
@@ -40,7 +40,7 @@ vector<parametro> vecPar;
 int main() {
 
 	InitializeCriticalSection(&hSecaoCritica);
-	int n = 1900, m = 1900, nThreads = 4, subN = 100, subM = 100, seed = 666;
+	int n = 1900, m = 1900, nThreads = 4, subN = 100, subM = 100, seed = 666; // n = linhas da matriz, m = colunas da matriz, nThreads = numero de threads
 	srand(seed);
 	setlocale(LC_ALL, "pt_BR.UTF-8");
 	time_t t0, t1;
