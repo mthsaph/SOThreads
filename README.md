@@ -1,5 +1,3 @@
----
-
 # 🔢 Matrix Prime Counter (C++ / Windows Threads)
 
 Este projeto implementa um sistema para **contar quantos números primos aparecem em uma matriz NxM**, utilizando duas abordagens:
