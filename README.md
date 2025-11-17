@@ -4,8 +4,8 @@
 
 Este projeto implementa um sistema para **contar quantos números primos aparecem em uma matriz NxM**, utilizando duas abordagens:
 
-* **Singlethread** (processamento sequencial)
-* **Multithread com Windows API** (`CreateThread`, `CRITICAL_SECTION`)
+**Singlethread** (processamento sequencial)
+**Multithread com Windows API** (`CreateThread`, `CRITICAL_SECTION`)
 
 O objetivo é **comparar o tempo de execução** entre as duas abordagens ao processar uma matriz grande (ex.: 1900×1900).
 
